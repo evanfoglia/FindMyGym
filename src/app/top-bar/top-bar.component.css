@@ -1,0 +1,24 @@
+.container-fluid {
+    background-color: #C8C8C0;
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+}
+
+.mytitle {
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.mat-stroked-button {
+    color: white;
+    background-color: black;
+    border: black;
+}
+
+.mytitle {
+    cursor: pointer;
+}
+

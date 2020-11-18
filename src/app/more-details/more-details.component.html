@@ -1,0 +1,62 @@
+<br>
+<br><br>
+<br><br>
+<br>
+
+<div *ngIf="gym">
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <mat-tab-group mat-align-tabs="center">
+                    <mat-tab label="Description">
+                        <table style="width: 95%;">
+                            <tr>
+                                <td> <img src="{{gym.picture}}" height="250px" width="250px"></td>
+                            </tr>
+                            <tr>
+                                <td>{{ gym.description }} </td>
+                            </tr>
+                        </table>
+                    </mat-tab>
+                    <mat-tab label="Contact Info">
+                        <table style="width: 95%;">
+                            <tr>
+                                <td>{{ gym.contact }} </td>
+                            </tr>
+                        </table>
+                    </mat-tab>
+                    <mat-tab label="Location">
+                        <table style="width: 95%;">
+                            <tr>
+                                <td>{{ gym.address }} </td>
+                            </tr>
+                        </table>
+                    </mat-tab>
+                    <mat-tab label="Cost of Membership">
+                        <table style="width: 95%;">
+                            <tr *ngFor="let i of gym.cost">
+                                <td>{{ i.id }} </td>
+                            </tr>
+                        </table>
+                    </mat-tab>
+                    <mat-tab label="Hours of Operation">
+                        <table style="width: 95%;">
+                            <tr>
+                                <td>{{ gym.hours }} </td>
+                            </tr>
+                        </table>
+                    </mat-tab>
+                    <mat-tab label="Reviews">
+                        <table style="width: 95%;">
+                            <tr>
+                                <td>{{ gym.reviews }} </td>
+                            </tr>
+                        </table>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>
